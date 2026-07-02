@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+#define PI 3.14
+
+int main() {
+    int choice;
+    float num, area;
+    while (scanf("%d", &choice) == 1) {
+        switch(choice) {
+            case 1:
+                if (scanf("%f", &num) == 1) {
+                    area = PI * num * num;
+                    printf("Area of circle=%.1f\n", area);
+                }
+                break;
+                
+            case 2:
+                if (scanf("%f", &num) == 1) {
+                    area = num * num;
+                    printf("Area of square=%.1f\n", area);
+                }
+                break;
+                
+            case 3:
+                if (scanf("%f", &num) == 1) {
+                    area = 4.0 * PI * num * num;
+                    printf("Area of sphere=%.1f\n", area);
+                }
+                break;
+                
+            default:
+                break;
+        }
+    }
+
+    return 0;
+}
+
